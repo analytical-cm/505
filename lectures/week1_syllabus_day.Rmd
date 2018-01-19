@@ -3,17 +3,14 @@ title: Analytical Case Management
 subtitle: Syllabus Day
 author: Joe Mienko
 institute: School of Social Work
-#titlegraphic: uw_social.png
-fontsize: 10pt
+css: svm-ioslides-css.css
+font-import: https://fonts.googleapis.com/css?family=Didact+Gothic
+font-family: 'Didact Gothic'
 output:
  ioslides_presentation:
-    smaller: true
-    #logo: uw_social.png
-    css: svm-ioslides-css.css    
- beamer_presentation:
-    template: svm-latex-beamer.tex
-    keep_tex: true
-# toc: true
+    incremental: yes
+    logo: W-Logo_Purple_Hex.png
+    widescreen: yes  
     slide_level: 2
 ---
 
@@ -29,16 +26,39 @@ output:
 
 ## **Current** Outline of the Course
 
-```{r cars, echo = FALSE}
-DiagrammeR::mermaid("
-graph LR
-A(<center>Investigative <br/> Measurement</center>)-->B{<center>Investigative <br/> Decisions</center>}
-B-->C(<center>Psychometric <br/> Measurement</center>)
-C-->D{<center>Treatment <br/> Decisions</center>}
-D-->E(<center>Change <br/> Measurement</center>)
-E-->F{<center>Permanency <br/> Decisions</center>}
-")
+```{r, echo = FALSE}
+DiagrammeR::grViz("
+digraph boxes_and_circles {
+
+  # a 'graph' statement
+  graph [overlap = true, rankdir = LR]
+
+  # several 'node' statements
+  node [shape = box, fontsize = 30, fillcolor = '#d9d9d9', color = '#d9d9d9', fontcolor = black,
+        fontname = Helvetica, width = 2, style = filled]
+  A[label = '@@1']; C[label = '@@2']; E[label = '@@3']; 
+
+  node [shape = circle, fontsize = 30
+        fixedsize = true, style = filled, fillcolor = '#444444', color = '#444444', fontcolor = white,
+        width = 2.75] 
+  B[label = '@@4']; D[label = '@@5']; F[label = '@@6']; 
+
+  edge [color = '#BEC837', minlen = 2, penwidth = 4]
+  # several 'edge' statements
+  A->B B->C C->D D->E E->F
+}
+
+
+[1]: 'Investigative \\n Measurement'
+[2]: 'Psychometric \\n Measurement'
+[3]: 'Change \\n Measurement'
+[4]: 'Investigative \\n Decisions'
+[5]: 'Treatment \\n Decisions'
+[6]: 'Permanency \\n Decisions'
+
+", width = 1000)
 ```
+
 
 ## Syllabus is Still Subject to Change
 
