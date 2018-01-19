@@ -279,9 +279,11 @@ Complete the following housekeeping activities prior to our next meeting:
 
 ##  `r advdate(mon, 3)`: Social Service Science and Measurement
 
-*Readings forthcoming*
-
 ##  `r advdate(mon, 4)`: Investigative Assessment - Failure to Thrive and Caloric Intake
+
+  - Olsen, Else Marie, Janne Petersen, Anne Mette Skovgaard, Birgitte Weile, Torben Jørgensen, and Charlotte M. Wright. *Failure to thrive: the prevalence and concurrence of anthropometric criteria in a general infant population.* Archives of disease in childhood 92, no. 2 (2007): 109-114.
+  
+  - Review "Estimated energy requirements" for children from UpToDate.
 
 *Readings forthcoming*
 
